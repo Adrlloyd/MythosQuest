@@ -1,0 +1,32 @@
+{
+  "name": "mythosquest",
+  "version": "1.0.0",
+  "description": "Concept: \"MythosQuest\" is an interactive educational platform that immerses users in the world of Greek antiquity through interactive storytelling, gamified quizzes, and virtual tours of ancient sites. Users can explore mythological stories, learn about historical events, and engage with ancient Greek culture in a dynamic way.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Adrlloyd/MythosQuest.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Adrlloyd/MythosQuest/issues"
+  },
+  "homepage": "https://github.com/Adrlloyd/MythosQuest#readme",
+  "dependencies": {
+    "axios": "^1.7.5",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongodb": "^6.8.0",
+    "mongoose": "^8.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
