@@ -17,13 +17,11 @@ app.get('/', (req, res) => {
   res.send('homepage')
 })
 
-const storiesRoute = require('./routes/storiesRoute');
-app.use('/', storiesRoute);
+const mythsRoute = require('./routes/mythsRoute');
+app.use('/', mythsRoute)
 
-// MongoDB connection
-mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
-  .then(() => console.log('MongoDB connected'))
-  .catch(err => console.log(err));
+const userRoutes = require('./routes/userRoutes');
+app.use('/users', userRoutes)
 
 app.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}`)

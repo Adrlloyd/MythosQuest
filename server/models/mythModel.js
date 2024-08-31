@@ -4,15 +4,16 @@ const mongoose = require('mongoose')
 mongoose.connect(process.env.MONGO_URI)
 const { Schema } = mongoose
 
-const storySchema = new Schema( {
+const mythSchema = new Schema({
   title: String,
   desc: String,
   img: {
     data: Buffer,
     contentType: String
-  }
+  },
+  options: [{ text: String, nextMythId: mongoose.Schema.Types.ObjectId }]
 });
 
-const Story = mongoose.model('Story', storySchema)
+const Myth = mongoose.model('Myth', mythSchema)
 
-module.exports = Story;
+module.exports = Myth;
