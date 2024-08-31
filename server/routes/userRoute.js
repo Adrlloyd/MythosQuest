@@ -1,6 +1,6 @@
 const express = require('express')
 const router = express.Router()
-const {verifyToken, verifyUser} = require('../utils/verifyToken')
+const { register, login} = require('../controllers/userController')
 
 
 router.post('/register', register);
