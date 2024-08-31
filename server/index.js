@@ -18,10 +18,10 @@ app.get('/', (req, res) => {
 })
 
 const mythsRoute = require('./routes/mythsRoute');
-app.use('/', mythsRoute)
+app.use('/myths', mythsRoute)
 
-const userRoutes = require('./routes/userRoutes');
-app.use('/users', userRoutes)
+const userRoute = require('./routes/userRoute');
+app.use('/users', userRoute)
 
 app.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}`)

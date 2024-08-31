@@ -9,7 +9,7 @@ const quizSchema = new Schema({
   questtions: [
     {
       questionText: {type: String, required: true },
-      options: [string],
+      options: [String],
       correctOption: {type: Number, required: true },
     },
   ],
