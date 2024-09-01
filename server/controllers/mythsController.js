@@ -2,6 +2,7 @@ const Myth = require('../models/mythModel');
 
 const getMyths = async (req, res) => {
   const result = await Myth.find()
+  console.log(result)
   res.send({'myths': result})
 };
 

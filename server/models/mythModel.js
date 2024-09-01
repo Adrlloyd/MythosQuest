@@ -5,12 +5,8 @@ mongoose.connect(process.env.MONGO_URI)
 const { Schema } = mongoose
 
 const mythSchema = new Schema({
-  title: String,
-  desc: String,
-  img: {
-    data: Buffer,
-    contentType: String
-  },
+  title: { type: String, required: true },
+  content: { type: String, required: true },
   options: [{ text: String, nextMythId: mongoose.Schema.Types.ObjectId }]
 });
 

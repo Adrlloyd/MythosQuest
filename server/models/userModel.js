@@ -2,7 +2,7 @@ require('dotenv').config()
 const mongoose = require('mongoose')
 const bcrypt = require('bcryptjs');
 
-mongoose.connect(process.env.MONGO)
+mongoose.connect(process.env.MONGO_URI)
 const { Schema } = mongoose
 
 const userSchema = new Schema({

@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const Story = require('../models/mythModel');
+const Myth = require('../models/mythModel');
 const { getMyths, getMyth } = require('../controllers/mythsController');
 
 

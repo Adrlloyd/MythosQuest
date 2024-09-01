@@ -18,7 +18,7 @@ app.get('/', (req, res) => {
 })
 
 const mythsRoute = require('./routes/mythsRoute');
-app.use('/myths', mythsRoute)
+app.use('/', mythsRoute)
 
 const userRoute = require('./routes/userRoute');
 app.use('/users', userRoute)
