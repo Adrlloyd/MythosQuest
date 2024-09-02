@@ -1,10 +1,18 @@
 import React from 'react';
 
-const MythCard = ({ title, desc }) => {
+const MythCard = ({ title, content }) => {
   return (
-    <div>
-      <h3>{title}</h3>
-      <p>{desc}</p>
+    <div className="card">
+      <header className="card-header">
+        <p className="card-header-title">
+          {title}
+        </p>
+      </header>
+      <div className="card-content">
+        <div className="content">
+          {content}
+        </div>
+      </div>
     </div>
   );
 };

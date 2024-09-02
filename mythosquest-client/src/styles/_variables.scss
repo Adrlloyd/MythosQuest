@@ -1,0 +1,21 @@
+// Color scheme
+$primary: #1f3a93; // Deep Blue
+$link: $primary;
+$info: #d4af37;    // Gold
+$background: #f5f5f5; // Marble White
+$success: #708238; // Olive Green
+
+// Font Variables
+$family-primary: 'Cinzel', serif;
+$family-secondary: 'Cormorant Garamond', serif;
+
+body {
+  font-family: $family-primary;
+  background-color: $background;
+  color: $primary;
+}
+
+h1, h2, h3 {
+  font-family: $family-secondary;
+  color: $primary;
+}

@@ -21,7 +21,7 @@ const Myths = () => {
   return (
     <div className="myths">
       {myths.map(myth => (
-        <MythCard key={myth._id} title={myth.title} desc={myth.desc} />
+        <MythCard key={myth._id} title={myth.title} content={myth.content} />
       ))}
     </div>
   );

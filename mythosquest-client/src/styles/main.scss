@@ -1,0 +1,59 @@
+@import '~bulma';
+@import 'variables';
+
+.navbar {
+  background-color: $primary;
+  border-bottom: 3px solid $info;
+  
+  .navbar-item {
+    font-family: $family-secondary;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+}
+
+.footer {
+  background-color: $primary;
+  color: $background;
+  padding: 2rem;
+  text-align: center;
+}
+
+.card {
+  background-color: $background;
+  border: 2px solid $info;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  .card-header-title {
+    font-family: $family-secondary;
+    color: $primary;
+  }
+
+  .card-content {
+    font-family: $family-secondary;
+    color: $primary;
+  }
+}
+
+.button {
+  background-color: $info;
+  color: $background;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  font-family: $family-secondary;
+  transition: background-color 0.3s, box-shadow 0.3s;
+
+  &:hover {
+    background-color: darken($info, 10%);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.section {
+  padding: 3rem 1.5rem;
+  background-color: $background;
+  color: $primary;
+  border: 1px solid $primary;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
